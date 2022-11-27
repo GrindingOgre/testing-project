@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let u of users$ | async">
+    <img width="40"
+         height="40"
+         [src]="u.avatar"> {{u.firstName}} {{u.lastName}} - {{u.email}}
+  </li>
+</ul>

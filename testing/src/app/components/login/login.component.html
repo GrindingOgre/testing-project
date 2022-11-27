@@ -1,0 +1,16 @@
+<form (ngSubmit)="doLogin()">
+  <input type="text"
+         id="username"
+         [(ngModel)]="username"
+         name="username">
+  <br>
+  <input type="password"
+         id="password"
+         [(ngModel)]="password"
+         name="password">
+  <br>
+  <button type="submit">Login</button>
+</form>
+<div style="color:red"
+     *ngIf="error"
+     id="error">{{error}}</div>
